@@ -1,0 +1,34 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package pertemuan4;
+
+import javax.swing.JOptionPane;
+
+/**
+ *
+ * @author N
+ */
+public class JOptionpane {
+    public static void main(String[] args) {
+        String nama,pesan,kesan ;
+        int angka;
+        double koma;
+        nama = JOptionPane.showInputDialog("Apa zodiak anda ?");
+        JOptionPane.showMessageDialog(null,"Mari uji coba zodiak " + nama + " anda ini !");
+        //  
+      angka = Integer.parseInt(JOptionPane.showInputDialog("berapa umur mu ?"));
+        koma = Double.parseDouble(JOptionPane.showInputDialog("presentase sekola mu"));
+        kesan = JOptionPane.showInputDialog("Apa kesan hidup anda ?");
+        pesan = JOptionPane.showInputDialog("Apa pesan anda ?");
+        // Output
+        System.out.println("Zodiak : "+nama);
+        System.out.println("Tanggal lahir : " + angka);
+        System.out.println("Presentase sekola mu" + " : " + koma);
+        System.out.println("Kesan hidup : " + kesan);
+        System.out.println("Pesan : "+pesan);
+        System.out.println("   ~ OKE, HIDUP ANDA BAIK-BAIK SAJA (mungkin) ~   ");
+    }
+}
